@@ -55,10 +55,5 @@ def jokenpo(entrada1, entrada2):
 
 
 if __name__ == "__main__":
-    """Roda o doctest caso o arquivo for chamado de forma direta.
-
-    Exemplo:
-    `python jokenpo.py`
-    """
     import doctest
     doctest.testmod()

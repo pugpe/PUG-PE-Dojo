@@ -1,22 +1,21 @@
-# while inotifywait -e close_write palavra_com_maior_pontuacao.py; do clear; python palavra_com_maior_pontuacao.py; done
-
-# from string import ascii_lowercase
-
-# d = {letter: i + 1 for i, letter in enumerate(ascii_lowercase)}
+from string import ascii_lowercase
 
 
-# def word_value(palavra):
-#     """
-#     >>> word_value('a')
-#     1
-#     >>> word_value('abc')
-#     6
-#     >>> word_value('z')
-#     26
-#     >>> word_value('ac')
-#     4
-#     """
-#     return sum(d[letra] for letra in palavra)
+d = {letter: i + 1 for i, letter in enumerate(ascii_lowercase)}
+
+
+def word_value(palavra):
+    """
+    >>> word_value('a')
+    1
+    >>> word_value('abc')
+    6
+    >>> word_value('z')
+    26
+    >>> word_value('ac')
+    4
+    """
+    return sum(d[letra] for letra in palavra)
 
 
 def maior_pontuacao(frase):
